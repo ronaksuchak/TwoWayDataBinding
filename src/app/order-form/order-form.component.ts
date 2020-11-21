@@ -14,7 +14,7 @@ export class OrderFormComponent implements OnInit {
   display() {
     this.result = "Name: " + this.order.custName + "\n" + "Billing Date: " + this.order.billingDate + "\n" + "Shipping Date:" +
       this.order.shippingDate + "\n" + "Order Total:" + this.order.amount;
-    console.warn(r);
+    console.warn(this.result);
 
   }
   ngOnInit(): void {
