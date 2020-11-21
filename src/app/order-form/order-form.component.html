@@ -1,0 +1,23 @@
+<label for="oid">OrderId:</label><br>
+<input type="number" id="oid" [(ngModel)]="order.orderId" /><br>
+
+<label for="oName">Name:</label><br>
+<input type="text" id="oName" [(ngModel)]="order.custName" /><br>
+
+<label for="billingDate">Billing Date:</label><br>
+<input type="date" id="billingDate" [(ngModel)]="order.billingDate" /><br>
+
+<label for="shippingDate">ShippingDate:</label><br>
+<input type="date" id="shippingDate" [(ngModel)]="order.shippingDate" /><br>
+
+<label for="oTotal">Total:</label><br>
+<input type="number" id="oTotal" [(ngModel)]="order.amount" /><br>
+
+<button (click)="display()">Display</button>
+
+<p>{{result}}</p>
+<!-- <p>OrderId: {{order.orderId}}</p>
+<p>Name: {{order.custName}}</p>
+<p>Billing Date: {{order.billingDate}}</p>
+<p>Shipping Date: {{order.shippingDate}}</p>
+<p>Order Total: {{order.amount}}</p> -->
